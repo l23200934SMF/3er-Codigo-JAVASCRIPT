@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo condicion if</title>
+</head>
+<body>
+
+    <h2>Ejemplo de estructura IF</h2>
+    <button onclick="VerificarEdad()">IF</button>
+    <button onclick="Iteracionnumero()">FOR</button>
+    <button onclick="Contador()">WHILE</button>
+
+    <script>
+        function VerificarEdad() {
+            let edad = prompt("Ingresa tu edad:");
+            edad = parseInt(edad);
+
+            if (edad >= 18) {
+                alert("Eres mayor de edad");
+            } else {
+                alert("Eres menor de edad");
+            }
+        }
+
+        function Iteracionnumero() {
+            for (let i = 1; i <= 5; i++) {
+                alert("Iteración número: " + i);
+            }
+        }
+
+        function Contador() {
+            let contador = 1;
+
+            while (contador <= 3) {
+                alert("Contador: " + contador);
+                contador++;
+            }
+        }
+    </script>
+
+</body>
+</html>
